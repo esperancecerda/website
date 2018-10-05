@@ -31,17 +31,18 @@
       var videoSource = ["./resources/videos/TRAMP_HALL_CHIENS.mp4","./resources/videos/Convo5.mp4", "./resources/videos/ESPECTRO.mp4"];
       var videoCount = videoSource.length;
 
-      document.getElementById("myVideo").setAttribute("src",videoSource[1]);
+      document.getElementById("myVideo").setAttribute("src",videoSource[0]);
       function videoPlay(videoNum)
           {
       document.getElementById("myVideo").setAttribute("src",videoSource[videoNum]);
       document.getElementById("myVideo").load();
       document.getElementById("myVideo").play();
       }
+      
       document.getElementById("myVideo").addEventListener("ended",myHandler,false);
       function myHandler() {
         i++;
-        if(i === (videoCount-1)){
+        if(i == (videoCount-1)){
         videoPlay(i);
         var i = 0;
       }
