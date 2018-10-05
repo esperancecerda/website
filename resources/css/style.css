@@ -1,0 +1,36 @@
+html {
+font-size: 22;
+font-family: 'Cutive Mono', monospace;
+}
+
+body {
+  margin:0;
+  text-align: center;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: -10;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.work li {
+  text-align: right;
+   padding: 0.5rem;
+   padding-right: 0;
+}
